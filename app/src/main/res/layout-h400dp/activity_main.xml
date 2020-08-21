@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <robsonmachczew.drawing.SimpleCanvasView
+            android:id="@+id/simplecanvas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/zhbg"
+            android:layout_above="@id/btn"/>
+
+        <robsonmachczew.drawing.MultiCanvasView
+            android:id="@+id/multicanvas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/zhbg"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/btn"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Canvas"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="clear"/>
+
+    </LinearLayout>
+
+</LinearLayout>
