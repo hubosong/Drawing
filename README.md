@@ -1,6 +1,6 @@
 # Drawing
 
-Desenvolvido por Robson Machczew
+Desenvolvido por Robson Machczew usando Android.
 
 APP de estudo para desenho em tela com onetouch e multitouch.<br/>
 
